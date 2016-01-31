@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<persistence xmlns="http://java.sun.com/xml/ns/persistence"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd"
+	version="2.0">
+
+	<persistence-unit name="${persistence-unit-name}"
+		transaction-type="JTA">
+		<provider>org.hibernate.ejb.HibernatePersistence</provider>
+		<jta-data-source>java:/${data-source-name}</jta-data-source>
+		<jar-file>${artifactId}-${version}.jar</jar-file>
+		<properties>
+			<property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQLDialect" />
+			<property name="hibernate.connection.url" value="jdbc:postgresql:sample" />
+			<property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver" />
+			<property name="hibernate.show_sql" value="true" />
+			<property name="hibernate.format_sql" value="true" />
+			<property name="hbm2ddl.auto" value="none" />
+			<property name="hibernate.connection.characterEncoding"
+				value="UTF-8" />
+			<property name="hibernate.connection.charSet" value="UTF-8" />
+		</properties>
+	</persistence-unit>
+
+	<persistence-unit name="CEANBTest-PU">
+		<non-jta-data-source>java:jboss/datasources/ExampleDS</non-jta-data-source>
+	</persistence-unit>
+
+</persistence>
