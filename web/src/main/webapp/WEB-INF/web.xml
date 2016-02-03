@@ -8,5 +8,36 @@
     <welcome-file-list>
         <welcome-file>index.jsp</welcome-file>
     </welcome-file-list>
-    
+    <servlet>
+        <servlet-name>MyServletQ15</servlet-name>
+        <servlet-class>ec.ocejwcd.app.examen.cap3.preguntas.MyServletQ15</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ContextAttribute</servlet-name>
+        <servlet-class>ec.ocejwcd.app.examen.cap4.ContextAttribute</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ContextAttributeRemove</servlet-name>
+        <servlet-class>ec.ocejwcd.app.examen.cap4.ContextAttributeRemove</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ContextInformation</servlet-name>
+        <servlet-class>ec.ocejwcd.app.examen.cap4.ContextInformation</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>MyServletQ15</servlet-name>
+        <url-pattern>/MyServletQ15/*</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ContextAttribute</servlet-name>
+        <url-pattern>/ContextAttribute/*</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ContextAttributeRemove</servlet-name>
+        <url-pattern>/ContextAttributeRemove/*</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ContextInformation</servlet-name>
+        <url-pattern>/ContextInformation/*</url-pattern>
+    </servlet-mapping>
 </web-app>

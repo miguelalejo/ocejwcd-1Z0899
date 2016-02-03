@@ -20,6 +20,8 @@
     	<module>persistencia</module>
     	<module>web</module>
     	<module>web-ear</module>
+		<module>web-module</module>
+    	<module>web-module-ear</module>
   	</modules>
   	<dependencyManagement>
 		<dependencies>
@@ -41,11 +43,29 @@
 				<version>${project.version}</version>
 				<type>war</type>
 			</dependency>			
+			<dependency>
+				<groupId>ec.ocejwcd.app</groupId>
+				<artifactId>web-module</artifactId>
+				<version>${project.version}</version>
+				<type>war</type>
+			</dependency>			
+			
 			<!--Dependecias JSF y Primefaces de la aplicacion -->
 			<dependency>
 			    <groupId>javax.faces</groupId>
 			    <artifactId>jsf-api</artifactId>
 			    <version>2.1</version>
+			</dependency>
+			<dependency>
+				<groupId>javax.servlet</groupId>
+				<artifactId>jstl</artifactId>
+				<version>1.2</version>
+			</dependency>
+			<dependency>
+				<groupId>javax.servlet</groupId>
+				<artifactId>servlet-api</artifactId>
+				<version>2.5</version>
+				<scope>provided</scope>
 			</dependency>
 			<!--Dependecias LOG4J-->
 			<dependency>

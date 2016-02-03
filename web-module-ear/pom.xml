@@ -6,9 +6,9 @@
 		<artifactId>examen</artifactId>
 		<version>1.0.0</version>
   	</parent>
-	<artifactId>web-ear</artifactId>
+	<artifactId>web-module-ear</artifactId>
 	<packaging>ear</packaging>
-	<name>WEB-EAR</name>
+	<name>WEB-MODULE-EAR</name>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
@@ -22,24 +22,16 @@
 				<version>${plugin.ear.version}</version>
 				<configuration>
 					<unpackTypes>war,ejb</unpackTypes>
-					<display-name>ocejwcd</display-name>
+					<display-name>webApp</display-name>
 					<modules>
 						<webModule>
 							<groupId>ec.ocejwcd.app</groupId>
-							<artifactId>web</artifactId>
-							<contextRoot>/ocejwcd</contextRoot>
+							<artifactId>web-module</artifactId>
+							<contextRoot>/webModule</contextRoot>
 						</webModule>
-						<ejbModule>
-							<groupId>ec.ocejwcd.app</groupId>
-							<artifactId>persistencia</artifactId>
-						</ejbModule>
-						<jarModule>
-							<groupId>ec.ocejwcd.app</groupId>
-							<artifactId>api</artifactId>
-							<includeInApplicationXml>false</includeInApplicationXml>
-						</jarModule>
 					</modules>
 					<defaultLibBundleDir>lib</defaultLibBundleDir>
+					<skinnyWars>true</skinnyWars>
 				</configuration>
 			</plugin>
 		</plugins>
@@ -47,18 +39,8 @@
 	<dependencies>
 		<dependency>
 			<groupId>ec.ocejwcd.app</groupId>
-			<artifactId>web</artifactId>
+			<artifactId>web-module</artifactId>
 			<type>war</type>
-		</dependency>
-		<dependency>
-			<groupId>ec.ocejwcd.app</groupId>
-			<artifactId>persistencia</artifactId>
-			<type>ejb</type>
-		</dependency>
-		<dependency>
-			<groupId>ec.ocejwcd.app</groupId>
-			<artifactId>api</artifactId>
-			<type>jar</type>
 		</dependency>
 	</dependencies>
 </project>

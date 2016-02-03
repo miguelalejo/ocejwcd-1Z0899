@@ -7,9 +7,9 @@
 		<artifactId>examen</artifactId>
 		<version>1.0.0</version>
 	</parent>
-	<artifactId>web</artifactId>
+	<artifactId>web-module</artifactId>
 	<packaging>war</packaging>
-	<name>WEB</name>
+	<name>WEB-MODULE</name>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
@@ -26,10 +26,6 @@
 		<dependency>
 			<groupId>log4j</groupId>
 			<artifactId>log4j</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>ec.ocejwcd.app</groupId>
-			<artifactId>api</artifactId>
 		</dependency>
 	</dependencies>
 </project>
