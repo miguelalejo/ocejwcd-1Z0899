@@ -1,5 +1,6 @@
 package ec.ocejwcd.app.examen.cap4;
 
+import ec.ocejwcd.app.examen.comun.Mensaje;
 import ec.ocejwcd.app.examen.entidad.Persona;
 import org.apache.log4j.Logger;
 
@@ -20,6 +21,7 @@ public class ContextAttribute extends HttpServlet {
         ServletContext servletContext = getServletContext();
         servletContext.setAttribute("SALUDO","HOLA MUNDO");
         servletContext.setAttribute("ATT","ATRIBUTO");
+        servletContext.setAttribute("hitcounter",10);
         Persona persona = new Persona();
         persona.setEdad(10);
         persona.setNombre("JOSE");
@@ -41,7 +43,11 @@ public class ContextAttribute extends HttpServlet {
         if (atributo!=null){
             LOGGER.info(atributo);
         }
-
+        Persona personaNueva=new Persona();
+        personaNueva.setNombre("ALAN");
+        personaNueva.setEdad(100);
+        servletContext.setAttribute("persona",personaNueva);
+        servletContext.setAttribute("hitcounter","TEXTO");
     }
 
     public void doOptions(HttpServletRequest httpServletRequest,HttpServletResponse httpServletResponse){
@@ -49,7 +55,7 @@ public class ContextAttribute extends HttpServlet {
         Enumeration listaAtributos = getServletContext().getAttributeNames();
         while(listaAtributos.hasMoreElements()){
             String nombre = (String)listaAtributos.nextElement();
-            LOGGER.info("Nombre:"+nombre);
+            LOGGER.info(String.format(Mensaje.MENSAJE_PARAMETRO,nombre,getServletContext().getAttribute(nombre)));
         }
     }
 }

@@ -8,9 +8,10 @@
     <welcome-file-list>
         <welcome-file>index.jsp</welcome-file>
     </welcome-file-list>
+    <!--SERVLET-->
     <servlet>
-        <servlet-name>MyServletQ15</servlet-name>
-        <servlet-class>ec.ocejwcd.app.examen.cap3.preguntas.MyServletQ15</servlet-class>
+        <servlet-name>CP3MyServletQ15</servlet-name>
+        <servlet-class>ec.ocejwcd.app.examen.cap3.preguntas.CP3MyServletQ15</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>ContextAttribute</servlet-name>
@@ -52,9 +53,54 @@
         <servlet-name>RequestDispatcherExterno</servlet-name>
         <servlet-class>ec.ocejwcd.app.examen.cap4.RequestDispatcherExterno</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>PametroInicioContexto</servlet-name>
+        <servlet-class>ec.ocejwcd.app.examen.cap4.PametroInicioContexto</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ConfiguracionServlet</servlet-name>
+        <servlet-class>ec.ocejwcd.app.examen.cap4.ConfiguracionServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ParametroInicioServlet</servlet-name>
+        <servlet-class>ec.ocejwcd.app.examen.cap4.ParametroInicioServlet</servlet-class>
+        <init-param>
+            <param-name>SER_MIME_TYPE</param-name>
+            <param-value>image/jpg</param-value>
+        </init-param>
+        <init-param>
+            <param-name>SER_COMPRESION</param-name>
+            <param-value>ZIP</param-value>
+        </init-param>
+    </servlet>
+    <servlet>
+        <servlet-name>CP4MyServletQ9</servlet-name>
+        <servlet-class>ec.ocejwcd.app.examen.cap4.preguntas.CP4MyServletQ9</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>CP4MyServletQ10</servlet-name>
+        <servlet-class>ec.ocejwcd.app.examen.cap4.preguntas.CP4MyServletQ10</servlet-class>
+        <init-param>
+            <param-name>SER_VAR</param-name>
+            <param-value>1000</param-value>
+        </init-param>
+        <init-param>
+            <param-name>SER_EXT</param-name>
+            <param-value>PNG</param-value>
+        </init-param>
+    </servlet>
+    <servlet>
+        <servlet-name>CP4MyServletQ15</servlet-name>
+        <servlet-class>ec.ocejwcd.app.examen.cap4.preguntas.CP4MyServletQ15</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>CP4MyServletQ16</servlet-name>
+        <servlet-class>ec.ocejwcd.app.examen.cap4.preguntas.CP4MyServletQ16</servlet-class>
+    </servlet>
+    <!--SERVLET MAPPING-->
     <servlet-mapping>
-        <servlet-name>MyServletQ15</servlet-name>
-        <url-pattern>/MyServletQ15/*</url-pattern>
+        <servlet-name>CP3MyServletQ15</servlet-name>
+        <url-pattern>/CP3MyServletQ15/*</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>ContextAttribute</servlet-name>
@@ -70,11 +116,11 @@
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>StaticResource</servlet-name>
-        <url-pattern>/staticResource</url-pattern>
+        <url-pattern>/StaticResource</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>ImagenExternaJEE6</servlet-name>
-        <url-pattern>/imagenExternaJEE6</url-pattern>
+        <url-pattern>/ImagenExternaJEE6</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>MimeType</servlet-name>
@@ -96,4 +142,58 @@
         <servlet-name>RequestDispatcherExterno</servlet-name>
         <url-pattern>/RequestDispatcherExterno/*</url-pattern>
     </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>PametroInicioContexto</servlet-name>
+        <url-pattern>/PametroInicioContexto/*</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ConfiguracionServlet</servlet-name>
+        <url-pattern>/ConfiguracionServlet/*</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ParametroInicioServlet</servlet-name>
+        <url-pattern>/ParametroInicioServlet/*</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CP4MyServletQ9</servlet-name>
+        <url-pattern>/CP4MyServletQ9/*</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CP4MyServletQ10</servlet-name>
+        <url-pattern>/CP4MyServletQ10/*</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CP4MyServletQ15</servlet-name>
+        <url-pattern>/CP4MyServletQ15/*</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CP4MyServletQ16</servlet-name>
+        <url-pattern>/CP4MyServletQ16/*</url-pattern>
+    </servlet-mapping>
+    <!--PARAMETROS CONTEXTO -->
+    <context-param>
+        <param-name>CTX_PARAM_NOMBRE_SERVIDOR</param-name>
+        <param-value>SERVIDOR_CENTRAL</param-value>
+    </context-param>
+    <context-param>
+        <param-name>CTX_PARAM_AMBIENTE</param-name>
+        <param-value>PRODUCCION</param-value>
+    </context-param>
+    <context-param>
+        <param-name>apptitle</param-name>
+        <param-value>My Ecommerce Website</param-value>
+    </context-param>
+    <context-param>
+        <param-name>language</param-name>
+        <param-value>en</param-value>
+    </context-param>
+    <!--LISTENERS-->
+    <listener>
+        <display-name>ServletContextListenerImp</display-name>
+        <listener-class>ec.ocejwcd.app.examen.cap4.ServletContextListenerImp</listener-class>
+    </listener>
+    <listener>
+        <display-name>ServletContextAttributeListenerImp</display-name>
+        <listener-class>ec.ocejwcd.app.examen.cap4.ServletContextAttributeListenerImp</listener-class>
+    </listener>
 </web-app>

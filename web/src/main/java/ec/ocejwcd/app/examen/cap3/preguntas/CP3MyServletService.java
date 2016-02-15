@@ -10,8 +10,8 @@ import javax.servlet.http.HttpServletResponse;
 /**
  * Created by Miguel on 2/2/2016.
  */
-public class MyServletService extends HttpServlet {
-    public static final Logger LOGGER = Logger.getLogger(MyServletService.class);
+public class CP3MyServletService extends HttpServlet {
+    public static final Logger LOGGER = Logger.getLogger(CP3MyServletService.class);
 
     @Override
     public void service(ServletRequest servletRequest, ServletResponse servletResponse){
