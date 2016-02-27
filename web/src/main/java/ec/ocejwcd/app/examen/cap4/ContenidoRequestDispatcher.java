@@ -24,6 +24,7 @@ public class ContenidoRequestDispatcher extends HttpServlet {
         OutputStream outputStream = httpServletResponse.getOutputStream();
         httpServletResponse.setContentType("image/png");
         httpServletResponse.setContentLength(imagen.length);
+        LOGGER.info("TAMANIO IMAGEN:"+imagen.length);
         outputStream.write(imagen);
     }
 }

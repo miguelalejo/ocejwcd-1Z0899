@@ -97,6 +97,74 @@
         <servlet-name>CP4MyServletQ16</servlet-name>
         <servlet-class>ec.ocejwcd.app.examen.cap4.preguntas.CP4MyServletQ16</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>ImpRequestDispatcherAttribute</servlet-name>
+        <servlet-class>ec.ocejwcd.app.examen.cap5.ImpRequestDispatcherAttribute</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ImpGenericServletRequestAttribute</servlet-name>
+        <servlet-class>ec.ocejwcd.app.examen.cap5.ImpGenericServletRequestAttribute</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ImpGenericServletParametro</servlet-name>
+        <servlet-class>ec.ocejwcd.app.examen.cap5.ImpGenericServletParametro</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ImpGenericServletRequestBody</servlet-name>
+        <servlet-class>ec.ocejwcd.app.examen.cap5.ImpGenericServletRequestBody</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ImpGenericServletRequestBodyReader</servlet-name>
+        <servlet-class>ec.ocejwcd.app.examen.cap5.ImpGenericServletRequestBodyReader</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ImplGenericServletRequestDispatcher</servlet-name>
+        <servlet-class>ec.ocejwcd.app.examen.cap5.ImplGenericServletRequestDispatcher</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ImpHttpServletRequestHeader</servlet-name>
+        <servlet-class>ec.ocejwcd.app.examen.cap5.ImpHttpServletRequestHeader</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ImpHttpServletCookie</servlet-name>
+        <servlet-class>ec.ocejwcd.app.examen.cap5.ImpHttpServletCookie</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ImplGenericServletRequestDispatcherCookie</servlet-name>
+        <servlet-class>ec.ocejwcd.app.examen.cap5.ImplGenericServletRequestDispatcherCookie</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ImpHttpServletSessionManagment</servlet-name>
+        <servlet-class>ec.ocejwcd.app.examen.cap5.ImpHttpServletSessionManagment</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ImpGenericServletResponse</servlet-name>
+        <servlet-class>ec.ocejwcd.app.examen.cap5.ImpGenericServletResponse</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ImpGenericServletResponseWriter</servlet-name>
+        <servlet-class>ec.ocejwcd.app.examen.cap5.ImpGenericServletResponseWriter</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ImpGenericServletResponseProtocol</servlet-name>
+        <servlet-class>ec.ocejwcd.app.examen.cap5.ImpGenericServletResponseProtocol</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ImplHttpServletResponseHeader</servlet-name>
+        <servlet-class>ec.ocejwcd.app.examen.cap5.ImplHttpServletResponseHeader</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ImplHttpServletResponseRedirect</servlet-name>
+        <servlet-class>ec.ocejwcd.app.examen.cap5.ImplHttpServletResponseRedirect</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ImplHttpServletResponseURLRewrite</servlet-name>
+        <servlet-class>ec.ocejwcd.app.examen.cap5.ImplHttpServletResponseURLRewrite</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ImplHttpServletResponseCookie</servlet-name>
+        <servlet-class>ec.ocejwcd.app.examen.cap5.ImplHttpServletResponseCookie</servlet-class>
+    </servlet>
     <!--SERVLET MAPPING-->
     <servlet-mapping>
         <servlet-name>CP3MyServletQ15</servlet-name>
@@ -170,6 +238,74 @@
         <servlet-name>CP4MyServletQ16</servlet-name>
         <url-pattern>/CP4MyServletQ16/*</url-pattern>
     </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ImpRequestDispatcherAttribute</servlet-name>
+        <url-pattern>/ImpRequestDispatcherAttribute</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ImpGenericServletRequestAttribute</servlet-name>
+        <url-pattern>/ImpGenericServletRequestAttribute</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ImpGenericServletParametro</servlet-name>
+        <url-pattern>/ImpGenericServletParametro</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ImpGenericServletRequestBody</servlet-name>
+        <url-pattern>/ImpGenericServletRequestBody</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ImpGenericServletRequestBodyReader</servlet-name>
+        <url-pattern>/ImpGenericServletRequestBodyReader</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ImplGenericServletRequestDispatcher</servlet-name>
+        <url-pattern>/ImplGenericServletRequestDispatcher</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ImpHttpServletRequestHeader</servlet-name>
+        <url-pattern>/ImpHttpServletRequestHeader</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ImpHttpServletCookie</servlet-name>
+        <url-pattern>/ImpHttpServletCookie</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ImplGenericServletRequestDispatcherCookie</servlet-name>
+        <url-pattern>/ImplGenericServletRequestDispatcherCookie</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ImpHttpServletSessionManagment</servlet-name>
+        <url-pattern>/ImpHttpServletSessionManagment</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ImpGenericServletResponse</servlet-name>
+        <url-pattern>/ImpGenericServletResponse</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ImpGenericServletResponseWriter</servlet-name>
+        <url-pattern>/ImpGenericServletResponseWriter</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ImpGenericServletResponseProtocol</servlet-name>
+        <url-pattern>/ImpGenericServletResponseProtocol</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ImplHttpServletResponseHeader</servlet-name>
+        <url-pattern>/ImplHttpServletResponseHeader</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ImplHttpServletResponseRedirect</servlet-name>
+        <url-pattern>/ImplHttpServletResponseRedirect</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ImplHttpServletResponseURLRewrite</servlet-name>
+        <url-pattern>/ImplHttpServletResponseURLRewrite</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ImplHttpServletResponseCookie</servlet-name>
+        <url-pattern>/ImplHttpServletResponseCookie</url-pattern>
+    </servlet-mapping>
     <!--PARAMETROS CONTEXTO -->
     <context-param>
         <param-name>CTX_PARAM_NOMBRE_SERVIDOR</param-name>
@@ -196,4 +332,13 @@
         <display-name>ServletContextAttributeListenerImp</display-name>
         <listener-class>ec.ocejwcd.app.examen.cap4.ServletContextAttributeListenerImp</listener-class>
     </listener>
+    <!--ERROR FILES-->
+    <error-page>
+        <error-code>404</error-code>
+        <location>/error/erro404.jsp</location>
+    </error-page>
+    <error-page>
+        <error-code>307</error-code>
+        <location>/error/erro307.jsp</location>
+    </error-page>
 </web-app>
