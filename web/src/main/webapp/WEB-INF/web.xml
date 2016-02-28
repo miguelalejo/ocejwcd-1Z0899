@@ -165,6 +165,22 @@
         <servlet-name>ImplHttpServletResponseCookie</servlet-name>
         <servlet-class>ec.ocejwcd.app.examen.cap5.ImplHttpServletResponseCookie</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>CAP5MyServletQ5</servlet-name>
+        <servlet-class>ec.ocejwcd.app.examen.cap5.preguntas.CAP5MyServletQ5</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>CAP5MyServletQ6</servlet-name>
+        <servlet-class>ec.ocejwcd.app.examen.cap5.preguntas.CAP5MyServletQ6</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>CAP5MyServletQ11</servlet-name>
+        <servlet-class>ec.ocejwcd.app.examen.cap5.preguntas.CAP5MyServletQ11</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>CAP5MyServletQ14</servlet-name>
+        <servlet-class>ec.ocejwcd.app.examen.cap5.preguntas.CAP5MyServletQ14</servlet-class>
+    </servlet>
     <!--SERVLET MAPPING-->
     <servlet-mapping>
         <servlet-name>CP3MyServletQ15</servlet-name>
@@ -306,6 +322,22 @@
         <servlet-name>ImplHttpServletResponseCookie</servlet-name>
         <url-pattern>/ImplHttpServletResponseCookie</url-pattern>
     </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CAP5MyServletQ5</servlet-name>
+        <url-pattern>/CAP5MyServletQ5</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CAP5MyServletQ6</servlet-name>
+        <url-pattern>/CAP5MyServletQ6</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CAP5MyServletQ11</servlet-name>
+        <url-pattern>/CAP5MyServletQ11</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CAP5MyServletQ14</servlet-name>
+        <url-pattern>/CAP5MyServletQ14</url-pattern>
+    </servlet-mapping>
     <!--PARAMETROS CONTEXTO -->
     <context-param>
         <param-name>CTX_PARAM_NOMBRE_SERVIDOR</param-name>
@@ -331,6 +363,14 @@
     <listener>
         <display-name>ServletContextAttributeListenerImp</display-name>
         <listener-class>ec.ocejwcd.app.examen.cap4.ServletContextAttributeListenerImp</listener-class>
+    </listener>
+    <listener>
+        <display-name>ImplServletRequestListener</display-name>
+        <listener-class>ec.ocejwcd.app.examen.cap5.ImplServletRequestListener</listener-class>
+    </listener>
+    <listener>
+        <display-name>ImplServletRequestAttributeListener</display-name>
+        <listener-class>ec.ocejwcd.app.examen.cap5.ImplServletRequestAttributeListener</listener-class>
     </listener>
     <!--ERROR FILES-->
     <error-page>
